@@ -7,6 +7,6 @@ namespace ProjectCraigsList.Models
 {
     public class ItemViewModel
     {
-        public List<Items>
+        public List<Items> 
     }
 }

@@ -8,6 +8,7 @@ namespace ProjectCraigsList.Models
     public class Item
     {
         public int ID { get; set; }
+        public string Description { get; set; }
         public string CreatedBy { get; set; }
         public DateTime CreatedOnDate { get; set; }
         public string City { get; set; }
