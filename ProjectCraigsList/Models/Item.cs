@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ProjectCraigsList.Models
 {
-    public class Item
+    public class Item : Details
     {
         public int ID { get; set; }
         public string Description { get; set; }

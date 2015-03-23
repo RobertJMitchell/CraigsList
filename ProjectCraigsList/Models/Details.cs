@@ -7,6 +7,6 @@ namespace ProjectCraigsList.Models
 {
     public abstract class Details
     {
-        public string Imagesize { get; set; }
+        public string ImageSize { get; set; }
     }
 }
