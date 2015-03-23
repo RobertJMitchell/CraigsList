@@ -17,6 +17,7 @@ namespace ProjectCraigsList.Controllers
             var itemData = ItemHolder.GetItem();
 
             var iData = itemData.Where(to => to.ID >= 100).ToList();
+            var iData2 = itemData.Where(to => to.Description.Contains("House")).ToList();
 
             viewModel.MyList = iData;
 

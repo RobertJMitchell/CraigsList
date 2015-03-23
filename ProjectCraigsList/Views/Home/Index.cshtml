@@ -6,10 +6,10 @@
 <div>
     <table class="table table-bordered table table-striped">
         <tr>
-            <th>ID</th>
-            <th></th>
-            <th></th>
-            <th></th>
+            <th>Title</th>
+            <th>Created By</th>
+            <th>Created On</th>
+            <th>Location</th>
         </tr>
         @foreach (var k in Model.MyList)
         { 
@@ -17,7 +17,7 @@
                 <td>@k.Description</td>
                 <td>@k.CreatedBy</td>
                 <td>@k.CreatedOnDate</td>
-                <td>@k.City + ", " + @k.State</td>
+                <td>@k.City, @k.State</td>
             </tr>
         }
 
