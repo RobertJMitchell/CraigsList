@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectCraigsList.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,7 +11,18 @@ namespace ProjectCraigsList.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            //Bring in the view model
+            ItemViewModel viewModel = new ItemViewModel();
+
+            var itemData = ItemHolder.GetItem();
+
+            var iData = itemData.Where(to => to.ID >= 100).ToList();
+
+            viewModel.MyList = iData;
+
+
+
+            return View(viewModel);
         }
 
         public ActionResult About()
